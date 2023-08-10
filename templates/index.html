@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RESAN - A way towards simpler survey response and analysis of data</title>
+  <!-- Correct the CSS file path -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">RESAN - A way towards simpler survey response and analysis of data</h1>
+    <div class="buttons">
+      <a href="{{ url_for('analyze') }}" class="analyze-btn">Analyze the Resume</a>
+      <!-- If you want to keep the "Apply for a Job" button functional, you can add an actual link here -->
+      <a href="#" class="apply-btn">Apply for a Job</a>
+    </div>
+  </div>
+  <!-- Correct the JS file path -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

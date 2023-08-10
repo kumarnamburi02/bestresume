@@ -1,0 +1,63 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Set the background image and style */
+    min-height: 85vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Title styles */
+  .title {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Buttons styles */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .analyze-btn, .apply-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .analyze-btn:hover, .apply-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional styles for the "Analyze the Resume" button */
+  .analyze-btn {
+    background-color: #28a745;
+  }
+  
+  /* Additional styles for the "Apply for a Job" button */
+  .apply-btn {
+    background-color: #dc3545;
+  }
+  

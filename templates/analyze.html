@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Matching</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='analyze.css') }}">
+</head>
+<body>
+    <h1>Job Matching</h1>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <label for="job_description">Job Description:</label>
+        <input type="file" id="job_description" name="job_description" accept=".txt, .docx">
+
+        <br>
+
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".txt, .docx" multiple>
+
+        <br>
+
+        <label for="valid_range">Enter desired matching percentage:</label>
+        <input type="number" name="desired_percentage" min="0" max="100" step="1">
+        
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if predictions %}
+    <h2>Predictions:</h2>
+    <ul>
+        {% for prediction in predictions %}
+        <li>{{ prediction }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
